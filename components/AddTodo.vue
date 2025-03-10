@@ -23,7 +23,7 @@ const newTodo = ref('');
 const add = () => {
   if (newTodo.value.trim()) {
     emit('add', newTodo.value);
-    newTodo.value = ''; // Clear input field
+    newTodo.value = ''; 
   }
 };
 </script>
