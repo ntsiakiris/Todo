@@ -35,7 +35,7 @@ onMounted(() => {
   }
 });
 
-// Watch for changes and update LocalStorage
+// Watch for changes and update localStorage
 watch(todos, (newTodos) => {
   localStorage.setItem('todos', JSON.stringify(newTodos));
 }, { deep: true });
