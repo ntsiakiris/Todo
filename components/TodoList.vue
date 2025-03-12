@@ -27,7 +27,7 @@ interface Todo {
 
 const todos = ref<Todo[]>([]);
 
-// Load todos from LocalStorage on mount
+// Load todos from localStorage on mount
 onMounted(() => {
   const savedTodos = localStorage.getItem('todos');
   if (savedTodos) {
